@@ -1,0 +1,5 @@
+src/**/* text=auto
+src/**/*.css linguist-vendored
+src/**/*.scss linguist-vendored
+src/**/*.js linguist-vendored
+CHANGELOG.md export-ignore
