@@ -79,3 +79,17 @@ services:
     entrypoint: ['php', '/var/www/html/artisan']
     networks:
       - laravel
+
+  lucid:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lucid
+    volumes:
+      - ./src:/var/www/html
+    depends_on:
+      - mysql
+    working_dir: /var/www/html
+    entrypoint: ['php', '/var/www/html/vendor/bin/lucid']
+    networks:
+      - laravel
