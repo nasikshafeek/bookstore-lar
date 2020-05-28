@@ -12,3 +12,6 @@ src/.env.backup
 src/.phpunit.result.cache
 src/npm-debug.log
 src/yarn-error.log
+
+# Docker compose volume
+mysql
